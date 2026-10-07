@@ -1,0 +1,8 @@
+CREATE DATABASE sistema_usuarios;
+USE sistema_usuarios;
+
+CREATE TABLE usuario(
+	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    nome VARCHAR(250) NOT NULL,
+    email VARCHAR(250) NOT NULL UNIQUE
+);
